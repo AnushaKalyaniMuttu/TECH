@@ -1,0 +1,107 @@
+
+NumPy is a powerful library in Python for numerical computing. It provides a wide range of methods for array manipulation, mathematical operations, and statistical analysis. Here’s a categorized list of commonly used NumPy methods:
+
+Array Creation
+numpy.array() - Creates an array.
+numpy.zeros() - Creates an array filled with zeros.
+numpy.ones() - Creates an array filled with ones.
+numpy.empty() - Creates an uninitialized array.
+numpy.arange() - Creates an array with a range of values.
+numpy.linspace() - Creates an array with evenly spaced values.
+numpy.eye() - Creates an identity matrix.
+numpy.random.rand() - Generates random values in a given shape.
+numpy.random.randint() - Generates random integers.
+
+
+Array Manipulation
+numpy.reshape() - Reshapes an array.
+numpy.ravel() - Flattens an array.
+numpy.transpose() - Transposes an array.
+numpy.vstack() - Stacks arrays vertically.
+numpy.hstack() - Stacks arrays horizontally.
+numpy.concatenate() - Joins arrays along an axis.
+numpy.split() - Splits an array into sub-arrays.
+numpy.expand_dims() - Expands dimensions of an array.
+numpy.squeeze() - Removes single-dimensional entries.
+
+
+Mathematical Operations
+numpy.add() - Element-wise addition.
+numpy.subtract() - Element-wise subtraction.
+numpy.multiply() - Element-wise multiplication.
+numpy.divide() - Element-wise division.
+numpy.dot() - Dot product of two arrays.
+numpy.matmul() - Matrix multiplication.
+numpy.sqrt() - Square root of each element.
+numpy.exp() - Exponential of each element.
+numpy.log() - Natural logarithm of each element.
+numpy.power() - Raises elements to a power.
+
+
+Statistical Operations
+numpy.mean() - Mean of elements.
+numpy.median() - Median of elements.
+numpy.std() - Standard deviation.
+numpy.var() - Variance.
+numpy.min() - Minimum value.
+numpy.max() - Maximum value.
+numpy.sum() - Sum of elements.
+numpy.percentile() - Percentile of elements.
+
+
+
+Logical Operations
+numpy.all() - Checks if all elements evaluate to True.
+numpy.any() - Checks if any element evaluates to True.
+numpy.where() - Returns indices where a condition is True.
+numpy.isin() - Tests if elements are in a list.
+numpy.logical_and() - Logical AND operation.
+numpy.logical_or() - Logical OR operation.
+numpy.logical_not() - Logical NOT operation.
+
+
+
+Indexing & Slicing
+numpy.take() - Extracts elements using indices.
+numpy.put() - Sets values at specific indices.
+numpy.argmax() - Index of the max value.
+numpy.argmin() - Index of the min value.
+numpy.nonzero() - Returns indices of non-zero elements.
+
+
+
+Sorting & Searching
+numpy.sort() - Sorts elements.
+numpy.argsort() - Indices that would sort an array.
+numpy.unique() - Finds unique elements.
+numpy.searchsorted() - Finds indices where elements should be inserted.
+
+
+
+Linear Algebra
+numpy.linalg.inv() - Computes the inverse of a matrix.
+numpy.linalg.det() - Computes the determinant.
+numpy.linalg.eig() - Computes eigenvalues and eigenvectors.
+numpy.linalg.norm() - Computes the matrix norm.
+numpy.linalg.solve() - Solves a linear matrix equation.
+
+
+
+Random Number Generation
+numpy.random.seed() - Sets the random seed.
+numpy.random.normal() - Generates samples from a normal distribution.
+numpy.random.uniform() - Generates samples from a uniform distribution.
+
+
+
+
+
+
+
+
+
+
+
+
+ChatGPT can make mistakes. Check important info.
+?
