@@ -1,0 +1,225 @@
+import matplotlib.pyplot as plt
+
+# Data
+x = [1, 2, 3, 4, 5]
+y = [1, 4, 9, 16, 25]
+
+# Basic line plot
+plt.plot(x, y)
+plt.title('Basic Line Plot')
+plt.xlabel('X Axis')
+plt.ylabel('Y Axis')
+plt.show()
+---
+2.Scatter Plot
+
+import matplotlib.pyplot as plt
+
+# Data
+x = [1, 2, 3, 4, 5]
+y = [5, 4, 3, 2, 1]
+
+# Scatter plot
+plt.scatter(x, y, color='red')
+plt.title('Scatter Plot')
+plt.xlabel('X Axis')
+plt.ylabel('Y Axis')
+plt.show()
+---
+
+3.Bar Plot
+
+import matplotlib.pyplot as plt
+
+# Data
+categories = ['A', 'B', 'C', 'D']
+values = [3, 7, 2, 5]
+
+# Bar plot
+plt.bar(categories, values, color='green')
+plt.title('Bar Plot')
+plt.xlabel('Categories')
+plt.ylabel('Values')
+plt.show()
+
+---
+
+4.Histogram
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Data
+data = np.random.randn(1000)
+
+# Histogram
+plt.hist(data, bins=30, edgecolor='black')
+plt.title('Histogram')
+plt.xlabel('Data')
+plt.ylabel('Frequency')
+plt.show()
+----
+5.Pie Chart
+
+
+import matplotlib.pyplot as plt
+
+# Data
+labels = ['A', 'B', 'C', 'D']
+sizes = [15, 30, 45, 10]
+
+# Pie chart
+plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90)
+plt.title('Pie Chart')
+plt.show()
+
+
+----
+6.SubPlot
+
+
+import matplotlib.pyplot as plt
+
+# Create 2 subplots (2 rows, 1 column)
+fig, axs = plt.subplots(2)
+
+# First plot
+axs[0].plot([1, 2, 3], [1, 2, 3])
+axs[0].set_title('Plot 1')
+
+# Second plot
+axs[1].scatter([1, 2, 3], [3, 2, 1])
+axs[1].set_title('Plot 2')
+
+plt.tight_layout()  # Adjusts the space between plots
+plt.show()
+
+---
+7.Plot with legends
+import matplotlib.pyplot as plt
+
+# Data
+x = [1, 2, 3, 4, 5]
+y1 = [1, 4, 9, 16, 25]
+y2 = [1, 2, 3, 4, 5]
+
+# Plot with multiple lines and legends
+plt.plot(x, y1, label='y = x^2')
+plt.plot(x, y2, label='y = x')
+plt.title('Multiple Lines with Legends')
+plt.xlabel('X Axis')
+plt.ylabel('Y Axis')
+plt.legend()
+plt.show()
+---
+Plot Style
+
+
+import matplotlib.pyplot as plt
+
+# Data
+x = [1, 2, 3, 4, 5]
+y = [5, 4, 3, 2, 1]
+
+# Customizing plot style
+plt.plot(x, y, linestyle='--', marker='o', color='purple', markersize=8)
+plt.title('Styled Plot')
+plt.xlabel('X Axis')
+plt.ylabel('Y Axis')
+plt.show()
+----
+Multiple Plots on same figure
+
+
+import matplotlib.pyplot as plt
+
+# Data
+x = [1, 2, 3, 4, 5]
+y1 = [1, 4, 9, 16, 25]
+y2 = [5, 4, 3, 2, 1]
+
+# Multiple plots
+plt.plot(x, y1, label='y = x^2')
+plt.plot(x, y2, label='y = -x', linestyle='dotted')
+
+plt.title('Multiple Plots')
+plt.xlabel('X Axis')
+plt.ylabel('Y Axis')
+plt.legend()
+plt.show()
+
+
+---
+Logarithimic Scale
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Data
+x = np.linspace(1, 10, 100)
+y = np.log(x)
+
+# Logarithmic scale
+plt.plot(x, y)
+plt.yscale('log')
+plt.title('Logarithmic Scale Plot')
+plt.xlabel('X Axis')
+plt.ylabel('Log(Y) Axis')
+plt.show()
+---
+
+Setting Axis limits
+
+
+import matplotlib.pyplot as plt
+
+# Data
+x = [1, 2, 3, 4, 5]
+y = [1, 4, 9, 16, 25]
+
+# Set axis limits
+plt.plot(x, y)
+plt.xlim(0, 6)
+plt.ylim(0, 30)
+plt.title('Plot with Axis Limits')
+plt.xlabel('X Axis')
+plt.ylabel('Y Axis')
+plt.show()
+---
+Annotating Plot
+
+import matplotlib.pyplot as plt
+
+# Data
+x = [1, 2, 3, 4, 5]
+y = [1, 4, 9, 16, 25]
+
+# Plot and annotate
+plt.plot(x, y)
+plt.title('Annotated Plot')
+plt.xlabel('X Axis')
+plt.ylabel('Y Axis')
+plt.annotate('Maximum Point', xy=(5, 25), xytext=(3, 20),
+             arrowprops=dict(facecolor='black', arrowstyle='->'))
+plt.show()
+
+
+---
+Saving a plot to file
+
+import matplotlib.pyplot as plt
+
+# Data
+x = [1, 2, 3, 4, 5]
+y = [1, 4, 9, 16, 25]
+
+# Save plot to file
+plt.plot(x, y)
+plt.title('Saved Plot')
+plt.xlabel('X Axis')
+plt.ylabel('Y Axis')
+plt.savefig('plot.png')  # Saves the plot as a PNG file
+plt.show()
+
+
