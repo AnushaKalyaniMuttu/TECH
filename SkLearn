@@ -1,0 +1,80 @@
+Scikit-learn (often abbreviated as sklearn) is a popular Python library for machine learning. It provides simple and efficient tools for data mining and analysis, built on top of NumPy, SciPy, and matplotlib. Here’s an overview of the key methods and modules in scikit-learn:
+
+1. Preprocessing
+Methods to prepare and normalize data.
+
+Scaling:
+StandardScaler (standardize features)
+MinMaxScaler (scale features to a range)
+RobustScaler (handle outliers)
+
+
+Encoding:
+OneHotEncoder (convert categorical features)
+LabelEncoder (encode target labels)
+
+
+Imputation:
+SimpleImputer (fill missing values)
+KNNImputer
+
+
+Polynomial Features:
+PolynomialFeatures (generate polynomial and interaction features)
+
+
+2. Supervised Learning
+Regression:
+LinearRegression
+Ridge, Lasso, ElasticNet (regularization techniques)
+SVR (Support Vector Regression)
+DecisionTreeRegressor
+RandomForestRegressor
+GradientBoostingRegressor
+KNeighborsRegressor
+
+
+Classification:
+LogisticRegression
+SVC (Support Vector Classification)
+DecisionTreeClassifier
+RandomForestClassifier
+GradientBoostingClassifier
+KNeighborsClassifier
+NaiveBayes (e.g., GaussianNB, MultinomialNB)
+
+
+3. Unsupervised Learning
+Clustering:
+KMeans
+DBSCAN
+AgglomerativeClustering
+Dimensionality Reduction:
+PCA (Principal Component Analysis)
+t-SNE
+TruncatedSVD
+
+
+4. Model Selection and Evaluation
+Cross-Validation:
+cross_val_score
+cross_validate
+Grid and Random Search:
+GridSearchCV
+RandomizedSearchCV
+Metrics:
+accuracy_score, precision_score, recall_score, f1_score
+roc_auc_score (for classification)
+mean_squared_error, r2_score (for regression)
+
+
+
+5. Feature Selection
+SelectKBest
+RFE (Recursive Feature Elimination)
+FeatureImportance from tree-based models
+6. Ensemble Methods
+BaggingClassifier / BaggingRegressor
+AdaBoostClassifier / AdaBoostRegressor
+VotingClassifier / VotingRegressor
+StackingClassifier / StackingRegressor
