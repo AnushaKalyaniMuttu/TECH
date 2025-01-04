@@ -1,0 +1,88 @@
+
+Seaborn is a Python data visualization library built on top of Matplotlib. It provides a high-level interface for creating informative and attractive statistical graphics. Below are some common methods and functions available in Seaborn:
+
+Categorical Plotting
+sns.catplot()
+Combines various categorical plots into a single function.
+sns.boxplot()
+Displays the distribution of data and outliers.
+sns.violinplot()
+Shows the distribution of data across categories, combining a boxplot and KDE.
+sns.stripplot()
+Displays individual data points.
+sns.swarmplot()
+A variant of stripplot that avoids overlapping points.
+sns.barplot()
+Shows the mean value for each category.
+sns.countplot()
+Displays the count of observations in each category.
+sns.pointplot()
+Shows point estimates and confidence intervals.
+
+
+
+Distribution Plotting
+sns.histplot()
+Plots histograms and density estimates.
+sns.kdeplot()
+Plots kernel density estimates.
+sns.rugplot()
+Displays individual data points along an axis.
+sns.ecdfplot()
+Plots the empirical cumulative distribution function.
+
+
+
+Relational Plotting
+sns.relplot()
+Combines scatter and line plots.
+sns.scatterplot()
+Creates a scatter plot.
+sns.lineplot()
+Creates a line plot.
+
+
+
+
+Regression Plotting
+sns.lmplot()
+Creates scatter plots with linear regression lines.
+sns.regplot()
+Fits and plots a regression line.
+sns.residplot()
+Plots residuals of a regression.
+
+
+
+Matrix Plotting
+sns.heatmap()
+Displays data in a matrix form with color coding.
+sns.clustermap()
+Creates a clustered heatmap.
+
+
+
+Pairwise Plotting
+sns.pairplot()
+Plots pairwise relationships in a dataset.
+sns.pairgrid()
+A grid for plotting pairwise relationships manually.
+FacetGrid and Grids
+sns.FacetGrid()
+A general grid for plotting multiple subplots.
+sns.JointGrid()
+A grid for joint plots.
+
+
+
+Joint Plotting
+sns.jointplot()
+Plots bivariate relationships with marginal plots.
+Style and Themes
+sns.set_theme()
+Sets the overall theme for the plots.
+sns.set_style()
+Changes the style of the plot (e.g., whitegrid, darkgrid).
+sns.set_context()
+Adjusts the context (e.g., paper, talk).
+These methods allow users to create a wide variety of visualizations for exploratory data analysis and presentation. Let me know if you'd like an example of how to use any specific method
