@@ -1,0 +1,25 @@
+Requirements
+
+
+Data Manipulation and Preprocessing
+Pandas
+Numpy
+
+
+Data Visualisation 
+Matplotlib
+seaborn
+
+
+GUI
+TKkinter
+
+
+Time Series data
+RNN(Recurrent Neural Network)
+LSTM(Long Short Term Memory)
+
+
+Regression Metrics
+Mean absolute error(MAE)
+Root Mean Square Error(RMSE)
