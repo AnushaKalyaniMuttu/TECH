@@ -96,6 +96,44 @@ numpy.random.uniform() - Generates samples from a uniform distribution.
 
 
 
+return np.array(dataX), np.array(dataY)
+
+import numpy as np
+list_data = [1, 2, 3]
+np_array = np.array(list_data)
+print(np_array)  # Output: [1 2 3]
+
+
+
+
+trainX = np.reshape(trainX, (trainX.shape[0], 1, trainX.shape[1]))
+testX = np.reshape(testX, (testX.shape[0], 1, testX.shape[1]))
+arr = np.array([1, 2, 3, 4])
+reshaped = arr.reshape(2, 2)
+print(reshaped)
+# Output:
+# [[1 2]
+#  [3 4]]
+
+
+
+data['Weighted Price'].replace(0, np.nan, inplace=True)
+arr = np.array([1, 2, np.nan, 4])
+print(arr)  # Output: [ 1.  2. nan  4.]
+
+
+
+
+inv_yhat = concatenate((yhat, test_X[:, 1:]), axis=1)
+arr1 = np.array([1, 2])
+arr2 = np.array([3, 4])
+result = np.concatenate((arr1, arr2))
+print(result)  # Output: [1 2 3 4]
+
+
+arr = np.array([1, np.nan, 3])
+result = np.nan_to_num(arr, nan=0)
+print(result)  # Output: [1. 0. 3.]
 
 
 
@@ -103,5 +141,4 @@ numpy.random.uniform() - Generates samples from a uniform distribution.
 
 
 
-ChatGPT can make mistakes. Check important info.
-?
+
